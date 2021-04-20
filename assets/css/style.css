@@ -3,13 +3,149 @@
 }
 
 html {
+  overflow-y: scroll;
   font-size: 16px;
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
 }
 
-body {
-
+h1 {
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-size: 3.75rem;
+  line-height: 1.2;
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
+}
+
+.btn {
+  height: 60px;
+  min-width: 250px;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.125rem;
+  transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d66926;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #2d3651;
+  background-image: url(../img/img-header.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+
+  display: grid;
+  align-content: center;
+}
+
+.header-overlay {
+  position: absolute;
+  background-color: #2d3651;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-menu__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+}
+
+.header-logo__link {
+  display: block;
+  padding: 20px 20px 20px 0;
+}
+
+.header-logo__accent {
+  display: inline-block;
+  border: 3px solid #d53d27;
+  padding: 15px 5px;
+}
+
+.header-navbar {
+}
+
+.header-navbar__btn {
+  display: none;
+}
+
+.header-navbar__list {
+  list-style: none;
+  margin: 0 -20px 0 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  justify-content: end;
+}
+
+.header-navbar__item {
+  margin: 0 10px;
+}
+
+.header-navbar__link {
+  display: block;
+  padding: 10px;
+  font-size: 1.125rem;
+  transition: color 0.5s;
+}
+
+.header-navbar__link:hover,
+.header-navbar__link:focus {
+  color: #d66926;
+}
+
+.header-menu__container,
+.header-content__container {
+  max-width: 1340px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content__title {
+  text-align: center;
+  margin: 0 0 51px 0;
+}
+
+.header-content__actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
