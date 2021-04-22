@@ -11,11 +11,11 @@ html {
 }
 
 h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0.08em;
   font-weight: 300;
   font-family: "Roboto Slab", serif;
   font-size: 3.75rem;
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 
 a {
@@ -33,6 +33,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 1.125rem;
   transition: background-color 0.5s;
+  letter-spacing: 0.1em;
 }
 
 .btn:hover,
@@ -80,7 +81,7 @@ a {
 
 .header-logo {
   font-size: 1.5rem;
-  letter-spacing: 6px;
+  letter-spacing: 0.22em;
 }
 
 .header-logo__link {
@@ -91,7 +92,8 @@ a {
 .header-logo__accent {
   display: inline-block;
   border: 3px solid #d53d27;
-  padding: 15px 5px;
+  padding: 14px 1px 13px 5px;
+  margin-right: 4px;
 }
 
 .header-navbar {
@@ -141,7 +143,7 @@ a {
 
 .header-content__title {
   text-align: center;
-  margin: 0 0 51px 0;
+  margin: 0 0 53px 0;
 }
 
 .header-content__actions {
@@ -149,3 +151,19 @@ a {
   gap: 20px;
   justify-content: center;
 }
+
+.skills {}
+
+.skills__container {}
+
+.skills__actions {}
+
+.skill-item {}
+
+.skill-item__overlay {}
+
+.skill-item__image {}
+
+.skill-item__title {}
+
+.skill-item__link {}
