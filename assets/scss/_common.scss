@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+
+  letter-spacing: 0.1em;
+
+  color: #637588;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  letter-spacing: 0.08em;
+
+  font-family: "Roboto Slab", serif;
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  font-size: 1.125rem;
+
+  &:hover,
+  &:focus {
+    background-color: #d66926;
+  }
+
+  &--light {
+    min-width: 250px;
+
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &--primary {
+    min-width: 350px;
+
+    border: 2px solid #2d3651;
+    background-color: rgba(45, 54, 81, 0.8); /* #2d3651 */
+  }
+}

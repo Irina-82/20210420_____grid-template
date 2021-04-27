@@ -1,0 +1,17 @@
+
+.header-content {
+  position: relative;
+
+  &__title {
+    margin: 0 0 53px 0;
+
+    text-align: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+  }
+}
