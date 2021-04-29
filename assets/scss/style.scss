@@ -1,11 +1,10 @@
-
 @import "../../libs/normalize.css/normalize.scss";
 
-//@import "skin";
-//@import "variables";
-//@import "mixins";
-//@import "mixins-media";
-//@import "extends";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
 
 @import "common";
 @import "header/header";
@@ -22,52 +21,3 @@
 @import "sections/section-posts";
 
 @import "footer";
-
-
-
-
-
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .header-content__title {
-    margin: 0 0 43px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.875rem;
-  }
-  .header-content__title {
-    margin: 0 0 33px 0;
-  }
-}
-
-@media (min-height: 641px) {
-  .skill-item {
-    min-height: calc(33.3333vh - 40px / 3);
-  }
-}
-@media (max-height: 640px) {
-  .skill-item {
-    min-height: 200px;
-  }
-}
-
-/*
-
-Подумать над недостатками работы с CSS
-
-1. Постоянный скроллинг кода, вместо работы - очень неудобно.
-2. Очень много кода, можно запутаться, работать неудобно.
-3. Может ошибиться и повторно использовать какой селектор.
-4. Нет валидации кода, который мы пишет.
-5. Нужно сторонние библиотеки втягивать в наш код для оптимизации, что увеличивает размер кода
-6. Нет возможности использовать импорты оптимально
-7. Нет возможности повторно использовать код, цвет, размерности - переменные
-8. Нет возможности гибко обновлять проект и работать с ним.
-9. Нет вложенностей, т.е. нет порядка, структуры.
-
-*/
